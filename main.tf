@@ -41,7 +41,7 @@ resource "aws_subnet" "Test-priv-sub1" {
 resource "aws_subnet" "Test-priv-sub2" {
   vpc_id     = aws_vpc.Prod-rock-VPC.id
   cidr_block = var.cidr-for-test-priv-sub2
-  availability_zone = var.Availability-Zone4
+  availability_zone = var.Availability-Zone4 
   tags = {
     Name = "Test-priv-sub2"
   }
